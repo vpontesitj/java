@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function validarDados(){
+            if(document.getElementById("nome").value == ""){
+                alert("Preencha o campo Nome")
+            }
+            if(document.getElementById("endereco").value == ""){
+                alert("Preencha o campo Endereço")
+            }
+            if(document.getElementById("bairro").value == ""){
+                alert("Preencha o campo Bairro")
+            }
+            if(document.getElementById("cep").value != 8){
+                alert("Preencha o campo Cep")
+            }
+            if(document.getElementById("cidade").value == ""){
+                alert("Preencha o campo Cidade")
+            }
+            if(document.getElementById("estados").value == ""){
+                alert("Preencha o campo Estado")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Nome: <input type="text" name="nome" id="nome"><br><br>
+        Endereço: <input type="text" name="endereco" id="endereco"><br><br>
+        Bairro: <input type="text" name="bairro" id="bairro"><br><br>
+        Cep: <input type="text" name="cep" id="cep"><br><br>
+        Cidade: <input type="text" name="cidade" id="cidade"><br><br>
+        Estado: <select name="estados" id="estados">
+            <option value="" selected disabled>Escolha um</option>
+            <option value="1">SP</option>
+            <option value="2">RJ</option>
+            <option value="3">MG</option>
+            <option value="4">ES</option>
+            <option value="5">AC</option>
+            <option value="6">AL</option>
+            <option value="7">AP</option>
+            <option value="8">AM</option>
+            <option value="9">BA</option>
+            <option value="10">CE</option>
+            <option value="11">DF</option>
+            <option value="12">GO</option>
+            <option value="13">MA</option>
+            <option value="14">MT</option>
+            <option value="15">MS</option>
+            <option value="16">PA</option>
+            <option value="17">PB</option>
+            <option value="18">PR</option>
+            <option value="19">PE</option>
+            <option value="20">PI</option>
+            <option value="21">RN</option>
+            <option value="22">RS</option>
+            <option value="23">RO</option>
+            <option value="24">RR</option>
+            <option value="25">SC</option>
+            <option value="26">SE</option>
+            <option value="27">TO</option>
+        </select><br><br>
+        <button value="Cadastrar" name="cadastrar" id="cadastrar" onclick="validarDados()">Cadastrar</button>
+    </form>
+</body>
+</html>
